@@ -1,424 +1,448 @@
+body{
+    margin: 0;
+    font-family: "inria Serif", serif;
 
-.background{
-    position: absolute; 
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: flex-start; 
-    display: inline-flex;
 }
-
-.column-layout{
-    display: flex;    
+header{
+    background-color:#f28ddc;
+    display: flex;
+    flex-direction: column;
 }
-.greeting{
-    /*width: 873px; 
-    height: 383px; 
-    left: 107px; 
-    top: 212px; */
-    width: 40%;
-    height: 20%;
-    left: 5%;
-    top: 10%;
-    position: absolute;
+#header{
+    display: flex;
 }
-.welcome{
-    width: 722px;
-    left: 1500px; 
-    /*width: 50%;
-    left: 70%;*/
-    position: relative; 
-    color: #A91488; 
-    font-size: 100px; 
-    font-family: Inria Serif; 
-    /*font-weight: 400; 
-    text-align: center;*/
-}
-.mahallah{
-    width: 922px; 
-    height: 99px; 
-    left: 1800px; 
-    top: 190px; 
-    /*width: 50%;
-    height: 10%;
-    left: 80%;
-    top: 28%;*/
-    position: relative; 
-    color: #A91488; 
-    font-size: 100px; 
-    font-family: Inria Serif; 
-    font-weight: 400; 
-    word-wrap: break-word;
-}
-.navigation{
-    display: inline;
-    /*height: 30px; */
-    left: 1800px; 
-    right:180px;
-    top: 21px; 
-    position: absolute; 
-    color: #A91488; 
-    font-size: 40px; 
-    font-family: Poppins; 
-    font-weight: 500; 
-    word-wrap: break-word;
-}
-.home{
-    left: 654px;
-    position: absolute;
-    cursor: pointer;
-}
-.home:hover,.contact:hover,.report:hover,.programme:hover,.announcement:hover{
-    color: black;
-}
-.contact{
-    left: 1600px; 
-    position: absolute;
-    cursor: pointer; 
-}
-.report{
-    left: 1902px;
-    position: absolute;
-    cursor: pointer;
-}
-.programme{
-    left: 1254px;
-    position: absolute;
-    cursor: pointer;
-}
-.announcement{
-    left: 852px;
-    position: absolute;
-    cursor: pointer;
-}
-.logo{
-    top: 130px; 
-    left:3100px;
-    position: absolute;
-    align-items:flex-end;
-    cursor: pointer;
-    display: inline;
-}
-.logo2{
-    position: absolute;
-    cursor: pointer;
-}
-.about{
-    left: 1600px; 
-    top: 590px; 
-    position: relative; 
-    color: black; 
-    word-wrap: break-word;
-    font-family: Georgia, serif;
-    font-size: 70px;
+#mahallah{
+    flex: 1;
+    order: 1;
+    text-align: center;
+    padding: 80px;
+    font-family: "inria Serif", serif;
+    font-size: 30px;
     letter-spacing: 2px;
     word-spacing: 2px;
+    color: #000000;
     font-weight: 700;
     font-style: italic;
-    text-transform: uppercase;
 }
-.social{
-    left: 1px; 
-    top: 800px; 
-    position: absolute ;  
-    cursor: pointer;
-}
-.section{
-    width: 100%; 
-    height: 100%; 
-    position: relative; 
-    background: white; 
-    border-radius: 2px; 
-    overflow: hidden; 
-    border: 1px rgba(0, 0, 0, 0.10) solid;
-}
-.design{
-    width: 2460px; 
-    height: 1000px; 
-    left: -300px;
-    top: 880px; 
-    position: absolute;
-}
-.statement{
-    width: 2000px; 
-    height: 1300px; 
-    left:2500px;
-    /*right: 1100px; */
-    top: 1200px;
-    position: absolute; 
-    background: #E8E7E7; 
-    border-radius: 90px;   
-    font-size: 60px;  
-    text-align: center; 
-    color: black; 
-    font-family: Inria Serif; 
-    font-weight: 400; 
-    word-wrap: break-word; 
-    text-wrap:1500px;
-}
-.about3{
-    left: 700px; 
-    top: 1900px;
-    text-align: center; 
-    color: black; 
-    font-size: 120px; 
-    font-family: Inria Serif; 
-    font-weight: 700; 
-    word-wrap: break-word;
-    align-items:flex-end;   
-    position: absolute;
-}
-.announcement2{
-    /*width: 100%; 
-    height: 100%; */
-    width:4842px;
-    height: 1000px;
-    top: 2650px;
-    /*flex: 3;*/
-    /*position: relative; */
-    position: absolute;
-    background: #DDDADD; 
-    border-radius: 1px; 
-    overflow: hidden; 
-    border: 1px rgba(0, 0, 0, 0.10) solid;
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: flex-start; 
-    display: inline-flex;
-}
-.pattern1{
-    width: 360px; 
-    height: 375px; 
-    left:10px; 
-    top: 2658px; 
-    flex: 3;
-    position: absolute;
-}
-.pattern2{
-    width: 360px; 
-    height: 375px;
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: flex-start; 
-    display: inline-flex;
-    top: 2660px;
-    /*align-items: end 100px;*/
-    align-self: flex-end ;
-    left: 4500px;
-    position: absolute;
-}
-.pattern3{
-    width: 360px; 
-    height: 375px;
-    top: 4290px;
-    left:9px; 
-    position: relative;  
-}
-.pattern4{
-    width: 360px; 
-    height: 375px;
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: flex-start; 
-    display: inline-flex;
-    top: 4290px;
-    /*align-items: end 100px;*/
-    align-self: flex-end ;
-    left: 4500px;
-    position: absolute;
-}
-.one{
-    /*width: 521px; */
-    margin-left: 2000px;
-    margin-top: 100px;
-    height: 150px; 
-    text-align: center; 
-    color: black; 
-    font-size: 90px; 
-    font-family: Inria Serif; 
-    font-weight: 700; 
-    word-wrap: break-word;
-}
-.two{
-    width: 427px; 
-    height: 72px; 
-    text-align: center; 
-    color: black; 
-    font-size: 30px; 
-    font-family: Inria Serif; 
-    font-weight: 700; 
-    word-wrap: break-word;  
-    margin-top: 540px;
-    margin-left: 1060px;
+#asma{
+    flex: 1;
+    order: 3;
+    text-align: center;
+    padding: 80px;
+    font-family: "inria Serif", serif;
+    font-size: 30px;
     letter-spacing: 2px;
     word-spacing: 2px;
-    cursor: pointer;
+    color: #000000;
+    font-weight: 700;
+    font-style: italic;
 }
-.two:hover,.three:hover,.four:hover,.five:hover{   
-    color: #A91488; 
+#logo{
+    display: block;
+   /* margin-left: auto;
+    margin-right: auto;*/
+    /*flex: 1;*/
+    margin-top: 30px;
+    order: 2;
 }
-.three{
-    width: 327px; 
-    height: 72px; 
-    text-align: center; 
-    color: black; 
-    font-size: 30px; 
-    font-family: Inria Serif; 
-    font-weight: 700; 
-    word-wrap: break-word;  
-    margin-left: 3260px;
-    margin-top: -60px;
-    justify-content: end;
+#motto{
+    text-align: center;
+    font-family: "inria Serif", serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    font-style: italic;
+}
+.about{
+    background-color: #ffe6f2;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-style: italic;
+    margin-top: 50px;
+    font-size: 20px;
+}
+#aboutus{
+    margin-top: 0;
+}
+.flip1 {
+    background-color: transparent;
+    width: 400px;
+    height: 300px;
+   /* border: 4px solid black;*/
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin-left: auto;
+    margin-right: auto;
     cursor: pointer;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip1:hover .flip-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-front, .flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-front {
+    background-color: #bbb;
+    color: black;
+    cursor: pointer;
+  }
+  
+  /* Style the back side */
+  .flip-back {
+    background-color: #ffe6f2;
+    color: white;
+    transform: rotateY(180deg);
+    font-family: "inria Serif", serif;
+    font-size: 13px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    font-style: italic;
+    line-break: 5px;
+  }
+
+  .flip2 {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 10px;
+  padding-top: 15px;
+  cursor: pointer;
 }
 .mrc{
-    width: 549px; 
-    height: 550px; 
-    align-items: center;
-    left:3150px; 
-    top: 2850px; 
+    border: 4px solid black;   
+}
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip2:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #ffe6f2;
+  color: white;
+  transform: rotateY(180deg);
+
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
     position: absolute;
-    cursor: pointer;     
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #ffe6f2;
+    color: white;
+    transform: rotateY(180deg);
+    font-family: "inria Serif", serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    font-style: italic;
+    line-break: 5px;
+    text-align: center;
+  }
+  .announcement{
+    background-color: #ffe6f2;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-style: italic;
+    margin-top: 50px;
+    font-size: 20px;
 }
-.sports{
-    width: 549px; 
-    height: 550px; 
-    align-items:flex-end;
-    left:1000px;
-    top: 2850px; 
-    position: absolute; 
-    cursor: pointer;   
+.history{
+    border: 4px solid black;   
 }
-.announcement3{
-   /* width: 1000px; 
-    height: 1280px; */
-    width:4850px;
-    height: 1000px;
-    left: 0px; 
-    top: 3660px; 
-    position: absolute; 
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: flex-start; 
-    display: inline-flex;
-    background: #DDDADD; 
+#Announcement{
+    margin-top: 35px;
 }
-.palestine{
-    width: 549px; 
-    height: 550px; 
-    align-items: center;
-    left:3150px;  
-    top: 3850px; 
-    position: absolute;  
-    cursor: pointer;    
+section{
+    /*background-color:white;*/
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
 }
-.awareness{
-    width: 549px; 
-    height: 550px; 
-    align-items:flex-end;
-    left:1000px;
-    top: 3850px; 
-    position: absolute;  
-    cursor: pointer; 
+#subheader{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
 }
-.four{
-    width: 327px; 
-    height: 72px; 
-    text-align: center; 
-    color: black; 
-    font-size: 30px; 
-    font-family: Inria Serif; 
-    font-weight: 700; 
-    word-wrap: break-word;  
-    margin-top: 760px;
-    margin-left: 1100px; 
-    cursor: pointer;  
+
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container1{
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+  flex: 2;
+  order: 1;
+  cursor: pointer;
 }
-.five{
-    width: 327px; 
-    height: 72px; 
-    text-align: center; 
-    color: black; 
-    font-size: 30px; 
-    font-family: Inria Serif; 
-    font-weight: 700; 
-    word-wrap: break-word;  
-    margin-left: 3270px;
-    margin-top: -70px;
-    justify-content: end;
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: #f28ddc;
+  /*background: #f28ddc;;*/
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: black;
+  font-size: 20px;
+  padding: 40px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container1:hover .overlay {
+  opacity: 1;
+}
+
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container2{
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+    flex: 2;
+    order: 3;
     cursor: pointer;
 }
-.footer{
-    width: 4842px;
-    height: 800px;
-    left: 0px; 
-    top: 4669px; 
-    position: absolute; 
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: flex-start; 
-    display: inline-flex;
-    background: white; 
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 30%;
+  height: auto;
 }
-.media{
-    width: 527px; 
-    height: 72px; 
-    text-align: center; 
-    color: black; 
-    font-size: 60px; 
-    font-family: Poppins; 
-    font-weight: 800; 
-    word-wrap: break-word;  
-    margin-top: 80px;
-    margin-left: 2200px;
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
 }
-.insta{
-    width: 119px; 
-    height: 100px; 
-    align-items: center;
-    left:2300px; 
-    top: 200px; 
-    position: absolute;   
-    cursor: pointer;  
+
+/* When you mouse over the container, fade in the overlay title */
+.container2:hover .overlay {
+  opacity: 1;
 }
-.x{
-    width: 119px; 
-    height: 100px; 
-    align-items: center;
-    left:2500px; 
-    top: 200px; 
-    position: absolute;  
-    cursor: pointer;   
+#subheader2{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
 }
-.copyright{ 
-    height: 72px; 
-    text-align: center; 
-    color: black; 
-    font-size: 60px; 
-    font-family: Poppins; 
-    font-weight: 800; 
-    word-wrap: break-word;  
-    margin-top: 199px;
-    margin-left: 2050px;
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container3{
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+  flex: 2;
+  order: 1;
+  cursor: pointer;
 }
-.programme:hover .dropdown,
-.contact:hover .dropdown,
-.report:hover .dropdown{
-    display: block;
-} 
-.dropdown{
-    display:none;
-    position: absolute;
-    background-color:#f9f9f9;
-    min-width: 160px;
-    box-shadow:0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
-.dropdown a{
-    display:block;
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: #f28ddc;
+  /*background: #f28ddc;;*/
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: black;
+  font-size: 20px;
+  padding: 40px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container3:hover .overlay {
+  opacity: 1;
+}
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container4{
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+    flex: 2;
+    order: 3;
+    cursor: pointer;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 30%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container4:hover .overlay {
+  opacity: 1;
+}
+#subheader2{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+.overlay:hover{
+    text-decoration: underline;
+}
+.btn {
+    border: 2px solid black;
+    background-color: white;
     color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-}
-.dropdown a:hover{
-    background-color: #f1f1f1;
-}
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  
+  .more {
+    border-color:#f28ddc;
+    color: black;
+  }
+  
+  .more:hover {
+    background-color: #f28ddc;
+    color: white;
+  }
