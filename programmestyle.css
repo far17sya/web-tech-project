@@ -1,7 +1,9 @@
 /* Start Navbar style */
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  font-family: "Poppins", sans-serif;
+  background-color: #b30059;
+  /* position: fixed; */
 }
 
 .navbar a {
@@ -29,25 +31,33 @@
   margin: 0;
 }
 .dropbtn:hover{
-color: black;
+  color: black;
+  /* padding: 2px; */
+  border-bottom-style: solid;
+  border-bottom-color: #9d6262;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #ddd;
+  /* background-color: #f38ccd; */
+  border-bottom-style: solid;
+  border-bottom-color: #9d6262;
+  color: black;
+  
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #b30059;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  color: black;
 }
 
 .dropdown-content a {
   float: none;
-  color: black;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -269,7 +279,7 @@ h1, p{
 }
 
 .title{
-  background-color: #E8E7E7;
+  background-color: #ffe6f2;
   padding: 20px;
   text-align: center;
   margin-bottom: 30px;
@@ -279,7 +289,8 @@ h1, p{
 body{
   margin: 0;
   font-family: "Inria Serif", serif;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
+  /* margin-bottom: 0; */
 }
 .awards-content{
   text-align: center;
@@ -288,12 +299,11 @@ body{
   height: 600px;
 }
 
-footer{
-  background-color: #bbb;
+/* footer{
+  background-color: #eb0075;
   padding: 5px;
   text-align: center;
-
-}
+} */
 .socmedlogo{
   width: 30px;
   height: 30px;
@@ -318,9 +328,9 @@ footer{
 }
 
 .button {
-  background-color: #ddd;
+  background-color: #b30059;
   border: none;
-  color: black;
+  color: white;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -332,15 +342,21 @@ footer{
   font-family: "Poppins", sans-serif;
 }
 .button:hover{
-  background-color: #A91488;
-  color: #f2f2f2;
+  /* background-color: #A91488; */
+ background-color: #e60b78a1;
+ color: black;
+
 }
 .filterbutton{
   padding-left: 550px;
   padding-right: 550px;
   margin: 15px;
-
+  /* background-color: #D80032; */
 }
+/* .filterbutton :hover{
+  background-color: #c76b80;
+} */
+
 
 #awardpage{
   margin-bottom: 30px;
@@ -382,13 +398,29 @@ div.scroll-container img {
   background-color: #A91488;
 }
 
-
 #studentpage{
   margin-bottom: 20px;
 }
 footer{
   font-family: "Poppins", sans-serif;
+  background-color:#b30059;
+  padding: 15px;
+  text-align: center;
+  color: white;
 }
+footer h3{
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+footer p{
+  padding-top: 10px;
+  font-weight: 500;
+}
+/* footer{
+  background-color: #bbb;
+  padding: 5px;
+  text-align: center;
+} */
 #campaignpage{
   margin-bottom: 30px;
   height: 600px;
@@ -414,220 +446,3 @@ footer{
 .awards-content{
   font-weight: 400;
 }
-
-
-
-
-/* Start Contact page */
- /* Add your CSS styles here */
- /* body {
-  font-family: 'Times New Roman', Times, serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-} */
-
-nav {
-  background-color: #444;
-  overflow: hidden;
-  text-align: right; /* Align buttons to the right */
-}
-
-nav a {
-  display: inline-block; /* Display buttons in a line */
-  color: #fff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-nav img {
-  display: inline-block; /* Display image inline with buttons */
-  vertical-align: middle; /* Align image vertically with text */
-  margin-right: 10px; /* Add some spacing between image and buttons */
-  border-radius: 50%;
-}
-
-nav a:hover {
-  background-color: #ddd;
-  color: #333;
-}
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-}
-
-section {
-  padding: 20px;
-  text-align: center; /* Center the content */
-}
-
-.telegram-button {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #0088cc;
-  color: #fff;
-  text-decoration: none;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.profile-section {
-  background-color: #ddd; /* Rectangle background color */
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 20px; /* Add space between Telegram group section and profile section */
-  text-align: center; /* Center the content within the profile section */
-}
-
-.profile-image {
-  width: 200px; /* Adjust the width of your image */
-  height: 200px; /* Adjust the height of your image */
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 10px; /* Add space between logos and text */
-  display: inline-block;
-}
-
-.additional-logo {
-  display: inline-block;
-  margin-top: 10px; /* Add some spacing between logos */
-  border-radius: 50%;
-  width: 100px; /* Adjust the width of your image */
-  height: 100px; /* Adjust the height of your image */
-}
-
-.logo-container {
-  text-align: center; /* Center the logos within the container */
-}
-
-.profile-section h2,
-.complaint-section h2 {
-  text-decoration: underline;
-}
-
-.complaint-section {
-  padding: 20px;
-  text-align: center; /* Center the content */
-}
-
-.complaint-section a {
-  display: block;
-  margin-top: 10px;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  display: none; /* Initially hide the footer */
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-.footer img {
-  border-radius: 50%;
-}
-/* End Contact page */
-/* Start Report page */
-/* Add your CSS styles here */
-/* body {
-  font-family: 'Times New Roman', Times, serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-} */
-
-nav {
-  background-color: #444;
-  overflow: hidden;
-  text-align: right; /* Align buttons to the right */
-}
-
-nav a {
-  display: inline-block; /* Display buttons in a line */
-  color: #fff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-nav img {
-  display: inline-block; /* Display image inline with buttons */
-  vertical-align: middle; /* Align image vertically with text */
-  margin-right: 10px; /* Add some spacing between image and buttons */
-  border-radius: 50%;
-}
-
-nav a:hover {
-  background-color: #ddd;
-  color: #333;
-}
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-}
-
-section {
-  padding: 20px;
-  text-align: center; /* Center the content */
-}
-
-.complaint-section,
-.wifi-complaint-section,
-.washing-machine-section {
-  background-color: #ddd; /* Rectangle background color */
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 20px; /* Add space between sections */
-  text-align: center; /* Center the content within the sections */
-}
-
-.profile-image {
-  width: 200px; /* Adjust the width of your image */
-  height: 200px; /* Adjust the height of your image */
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 10px; /* Add space between logos and text */
-  display: inline-block;
-}
-
-.additional-logo {
-  display: inline-block;
-  margin-top: 10px; /* Add some spacing between logos */
-  border-radius: 50%;
-  width: 100px; /* Adjust the width of your image */
-  height: 100px; /* Adjust the height of your image */
-}
-
-.complaint-section h2,
-.wifi-complaint-section h2,
-.washing-machine-section h2 {
-  text-decoration: underline;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  display: none; /* Initially hide the footer */
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-.footer img {
-  border-radius: 50%;
-}
-/* End Report page */
