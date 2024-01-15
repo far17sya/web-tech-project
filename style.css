@@ -103,10 +103,9 @@
     cursor: pointer;
 }
 .about{
-    width: max-content;
     left: 1600px; 
     top: 590px; 
-    position: absolute; 
+    position: relative; 
     color: black; 
     word-wrap: break-word;
     font-family: Georgia, serif;
