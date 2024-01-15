@@ -69,11 +69,11 @@ color: black;
   padding: 0;
 }
 
-body{
+/* body{
   color:#222;
-  /* font-family: system-ui, sans-serif;  */
+  font-family: system-ui, sans-serif; 
   padding-bottom: 50px;
-}
+} */
 
 .container{
   max-width: 1200px;
@@ -279,6 +279,7 @@ h1, p{
 body{
   margin: 0;
   font-family: "Inria Serif", serif;
+  padding-bottom: 50px;
 }
 .awards-content{
   text-align: center;
@@ -419,12 +420,12 @@ footer{
 
 /* Start Contact page */
  /* Add your CSS styles here */
- body {
+ /* body {
   font-family: 'Times New Roman', Times, serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-}
+} */
 
 nav {
   background-color: #444;
@@ -537,12 +538,12 @@ footer {
 /* End Contact page */
 /* Start Report page */
 /* Add your CSS styles here */
-body {
+/* body {
   font-family: 'Times New Roman', Times, serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-}
+} */
 
 nav {
   background-color: #444;
