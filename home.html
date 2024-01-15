@@ -3,154 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Mahallah Asmah</title>
+    <title>Mahallah Asma'</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="column-layout">
-
-    <header>
-        <div class="background">
-            <img src="images/background.png" alt="background" width="4842px" height="1000px">
-        </div>
-
-        <div class="greeting">
-            <div class="mahallah">
-                MAHALLAH ASMA'
-            </div>
-            <div class="welcome">
-                WELCOME TO
-            </div>
-        </div>
-
-        <div class="navigation">
-            <div class="home">HOME</div>
-            <div class="contact">CONTACT US
-                <div class="dropdown">
-                    <a href="contact page.html">Whatsapp Group</a>    <!--put the link in here-->
-                    <a href="contact page.html">Osem</a>
-                    <a href="contact page.html">Contact Number</a>
-                </div>
-            </div>
-            <div class="report">REPORT
-                <div class="dropdown">
-                    <a href="report page.html">Maintenance Report</a>    <!--put the link in here-->
-                    <a href="report page.html">Complaint</a>
-                    <a href="report page.html">Wifi Problem</a>
-                    <a href="report page.html">Washing Machine Problem</a>
-                </div>
-            </div>  
-            <div class="programme">PROGRAMME
-                <div class="dropdown">            <!--put the link in here-->
-                    <a href="programmepage.html">Student Programme</a>
-                    <a href="programmepage.html">Mahallah Campaign</a>
-                    <a href="programmepage.html">Award</a>
+    <nav>
+        <!-- Logo Image in the Navigation Bar (Now on the leftmost) -->
+        <!--<div class="navbar">
+            <a href="home.html">
+                <img src="images/mahallah asma logo.png" alt="Logo" width="40" height="40">
+            </a>
+            <a href="home.html">Home</a>
+            <a href="home.html">Announcement</a>
+            <div class="dropdown">
+                <a href="" class="dropbtn">Programme</a>
+                <div class="dropdown-content">
+                <a href="#programme">Student Programme</a>
+                <a href="#MahallahCamping">Mahallah Campaign</a>
+                <a href="#Awards">Awards</a>
                 </div>
             </div> 
-            <div class="announcement">ANNOUNCEMENT</div>
-            <script src="myscript.js"></script>
+            <a href="./contact page.html">Contact Us</a>
+            <a href="./report page.html">Report</a>
         </div>
+    </nav>-->
 
-        <div class="logo">
-            <a href="home.html"></a>
-            <img src="images/logo.png" alt="logo" width="700" height="700">
+    <header> <!--header with logo--><!--row-->
+        <div id="header">
+        <p id="mahallah">MAHALLAH</p><!--column 2-->
+        <img src="images/logo.png" alt="logo" id="logo" width="200" height="200"><!--column 2-->
+        <p id="asma">ASMA</p><!--column 3-->
         </div>
-        <div class="logo2">
-            <a href="home.html"></a>
-            <img src="images/logo.png" alt="logo2" width="200" height="200">
-        </div>
-
-        <div class="about">
-            UNITY . INTEGRITY . DIGNITY
-        </div>
-
-        <div class="social">
-            <a href="contact page.html">
-            <img src="images/SOCIAL MEDIA.png" alt="social media" width="380" height="241">
-            </a>
-        </div>
+        <p id="motto">UNITY .   INTEGRITY   .    DIGNITY</p>
     </header>
 
-    <section class="frame1">
-        <img class="design" src="images/design.png" alt="design">
-        <div class="statement">
-            <br></br>
-            Mahallah Asma’ was established since 1996. <br/> 
-            Mahallah Asma’ Office consist of 4 staff i.e. <br/> 
-            one (1) Principal and few fellows, one (1) <br/>
-            Assistant Hostel Manager, and two (2) <br/>
-            Administrative Assistants. 
-            <br></br>
-            Since then, we at Mahallah Asma’ strives 
-            hard to provide the best quality services for <br/>
-            the residents. Mahallah Asma’ has 7 blocks <br/>
-            which can accommodate approximately <br/>
-            856 students i.e. 40 UG and PG students. 
-            <br></br>
-            Apart accommodation, 
-            we also provide other range of services including café, <br/>
-            convenient shop, laundry, wireless internet, <br/>
-            and sports equipments.<br/>
-        </div>
+    <div class="about" id="aboutus"> <!--subheader-->
+        <h1>About Us</h1>
+    </div>
 
-        <div class="about3">
-            ABOUT <br/>US
+    <div class="flip1">             <!--flip1-->
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="images/History.jpeg" alt="history" style="width:400px;height:300px;" class="history">
+          </div>
+          <div class="flip-back">
+            <h1>HISTORY</h1>
+            <p>
+                Mahallah Asma’ was established since 1996. <br/>
+                Mahallah Asma’ Office consist of 4 staff i.e. one (1) Principal and few fellows, <br/>
+                one (1) Assistant Hostel Manager, and two (2) Administrative Assistants. <br/>
+                Since then, we at Mahallah Asma’ strives hard to provide the best quality services for the residents. <br/> 
+                Mahallah Asma’ has 7 blocks which can accommodate approximately 856 students i.e. 40 UG and PG students. <br/>
+                Apart accommodation, we also provide other range of services including <br/>
+                café, convenient shop, laundry, wireless internet, and sports equipments. <br/>
+            </p>
+          </div>
         </div>
+      </div>
 
-    </section>
-    <section class="announcement2">
-        <div class="one">
-            ANNOUNCEMENT
-        </div>
-        <div class="two">
-            <a href="programmepage.html" c>
-            MRC RECRUITMENT POSTER FOR <br/>NEW TENURE <br/>(2023/2024 SESSION)
-        </div>
-        <div class="three">
-            INTER-MAHALLAH SPORTS CARNIVAL 2023   
-        </div>
-        </a>
-    </section>
+      <div class="flip2">           <!--flip1-->
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/mrc.jpeg" alt="mrc" style="width:400px;height:400px;" class="mrc">
+          </div>
+          <div class="flip-card-back">
+            <br/>
+            <h1>MAHALLAH ASMA' REPRESENTATIVE COMMITTEE TENURE 23/24</h1>
+            <br/>
+            <p>
+                Sailing into a new tenure, the Mahallah Asma' <br/>
+                Representative Committee is dedicated to resident<br/>
+                satisfaction. We navigate challenges with <br/>
+                commitment, creating a welcoming haven for all.<br/>
+                Anchored in service, we're here to make every resident feel at home.<br/>
+            </p>
+            <br/>
+            <button class="btn more">learn more</button>
 
-    <div class="pattern">
-    <img class="pattern1" src="images/pattern1.png" alt="pattern"> 
-    <img class="pattern2" src="images/pattern2.png" alt="pattern">
-    <img class="mrc" src="images/Mrc.jpeg" alt="mrc">
-    <img class="sports" src="images/Sports.jpeg" alt="sports">
-    </div> 
+          </div>
+        </div>
+      </div>
 
-    <section class="announcement3">
-        <a href="programmepage.html">
-        <div class="four">
-            STATEMENT OF SUPPORT FOR <br/> PALESTINE
-        </div>
-        <div class="five">
-            RECRUITMENT OF FACILITATOR <br/>FOR SOUL OF ANAK PUSU
-        </div>
-        </a>
-    </section>
-    <div class="patternTwo">
-    <img class="pattern3" src="images/pattern3.png" alt="pattern3">
-    <img class="pattern4" src="images/pattern4.png" alt="pattern4">
-    <img class="palestine" src="images/Palestine.jpeg" alt="palestine">
-    <img class="awareness" src="images/Awareness.jpeg" alt="awareness">
+      <div class="announcement" id="Announcement"> <!--subheader2-->
+        <h1>Announcement</h1>
+    </div>
+    
+    <section>
+    <div id="subheader">
+    <div class="container1">
+        <img src="images/money.jpeg" alt="money" class="money" width="500x" height="500px">
+        <div class="overlay">On Money: What's New?</div>
+    </div>
+
+    <div class="container2">
+        <img src="images/palestine.jpeg" alt="palestine" class="palestine" width="500x" height="500px">
+        <div class="overlay">Statement for support for Palestine</div>
     </div>
     </div>
 
-   <div class="footer">
-        
-        <div class="media">SOCIAL MEDIA</div>
-        <div class="copyright">copyright © 2023 Mahallah Asma</div>
-        
+    <div id="subheader2">
+        <div class="container3">
+            <img src="images/Sports.jpeg" alt="sport" class="sport" width="500x" height="500px">
+            <div class="overlay">Inter-Mahallah Sports Carnival 2023</div>
+        </div>
+    
+        <div class="container4">
+            <img src="images/wellness.jpeg" alt="wellness" class="wellness" width="500x" height="500px">
+            <div class="overlay">Mindful Play: Asma' Wellness Day</div>
+        </div>
+        </div>
     </section>
-    <a href="https://www.instagram.com/mahallah_asma/">
-    <img class="insta" src="images/instagram icon.png" alt="instagram">
-    </a>
-    <a href="https://twitter.com/Mahallah_Asma?s=20">
-    <img class="x" src="images/Group.png" alt="x">
-    </a>
 
-
-    <script src="images/myscript.js"></script>
 </body>
 </html>
