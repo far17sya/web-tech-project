@@ -19,22 +19,42 @@ font-family: "Inria Serif", serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  padding-top: 94px;
 }
 
-.navbar {
-  overflow: hidden;
-  font-family: "Poppins", sans-serif;
-  background-color: #b30059;
-
+#navi-items{
+  padding-top: 18px;
 }
-
+#nav{
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* padding: 1rem 2rem; */
+    z-index: 100;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    background-color: #b30059;
+    
+}
 .navbar a {
   float: left;
   font-size: 16px;
   color: white;
   text-align: center;
   padding: 14px 16px;
+  /* padding-top: 10px; */
+  margin-bottom: 5px;
   text-decoration: none;
+  margin-bottom: 0;
+  padding-bottom: 8px;
+  font-weight: 500;
+}
+#asmalogonav{
+  width:65px; 
+  height:65px;
+  /* padding: 0; */
+  /* margin: 0; */
 }
 
 .dropdown {
@@ -75,6 +95,11 @@ font-family: "Inria Serif", serif;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   color: black;
+  display: none;
+  position: fixed;
+  /* min-width: 160px; */
+  /* box-shadow: 0px 8px 16px 0px rgba(120,150,120,0.2); */
+  /* z-index: 1; */
 }
 
 .dropdown-content a {
@@ -192,7 +217,7 @@ h2{
 footer{
   font-family: "Poppins", sans-serif;
   background-color:#b30059;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
   color: white;
 }
@@ -203,6 +228,7 @@ footer h3{
 footer p{
   padding-top: 10px;
   font-weight: 500;
+  padding-bottom: 0;
 }
 
 /* .footer img {
@@ -226,25 +252,30 @@ header{
 
     <!-- Navigation bar -->
     <nav>
-        <!-- Logo Image in the Navigation Bar (Now on the leftmost) -->
-        <div class="navbar">
-            <a href="home.html">
-                <img src="images/mahallah asma logo.png" alt="Logo" width="40" height="40" style="padding: 0;">
-            </a>
-            <a href="home.html">Home</a>
-            <a href="home.html">Announcement</a>
-            <div class="dropdown">
-                <a href="programmepage.html" class="dropbtn">Programme</a>
-                <div class="dropdown-content">
-                <a href="#programme">Student Programme</a>
-                <a href="#campaignpage">Mahallah Campaign</a>
-                <a href="#Awards">Awards</a>
-                </div>
-            </div> 
-            <a href="./contact page.html">Contact Us</a>
-            <a href="./report page.html">Report</a>
-        </div>
-    </nav>
+      <!-- Logo Image in the Navigation Bar (Now on the leftmost) -->
+      <div class="navbar" id="nav">
+          <div id="asma-logo-div">
+          <a href="home.html">
+              <!-- <img src="images/mahallah asma logo.png" alt="Logo" width="60" height="60" style="padding: 0;"> -->
+              <img src="images/logo.png" alt="Logo" id="asmalogonav" style="margin: 0;">
+          </a>
+          </div>
+      <div id="navi-items">
+          <a href="home.html">Home</a>
+          <a href="home.html">Announcement</a>
+          <div class="dropdown">
+              <a href="programmepage.html" class="dropbtn">Programme</a>
+              <div class="dropdown-content">
+              <a href="#programme">Student Programme</a>
+              <a href="#campaignpage">Mahallah Campaign</a>
+              <a href="#Awards">Awards</a>
+              </div>
+          </div> 
+          <a href="./contact page.html">Contact Us</a>
+          <a href="./report page.html">Report</a>
+      </div>
+      </div>
+  </nav>
 
     <header>
         <h1>Contact Us</h1>

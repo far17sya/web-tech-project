@@ -1,18 +1,46 @@
+body{
+  padding-top: 94px;
+}
 /* Start Navbar style */
-.navbar {
+/* .navbar {
   overflow: hidden;
   font-family: "Poppins", sans-serif;
   background-color: #b30059;
-  /* position: fixed; */
-}
+} */
 
+#navi-items{
+  padding-top: 18px;
+}
+#nav{
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* padding: 1rem 2rem; */
+    z-index: 100;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    background-color: #b30059;
+    
+}
 .navbar a {
   float: left;
   font-size: 16px;
   color: white;
   text-align: center;
   padding: 14px 16px;
+  /* padding-top: 10px; */
+  margin-bottom: 5px;
   text-decoration: none;
+  margin-bottom: 0;
+  padding-bottom: 8px;
+  font-weight: 500;
+}
+#asmalogonav{
+  width:65px; 
+  height:65px;
+  /* padding: 0; */
+  /* margin: 0; */
 }
 
 .dropdown {
@@ -53,6 +81,11 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   color: black;
+  display: none;
+  position: fixed;
+  /* min-width: 160px; */
+  /* box-shadow: 0px 8px 16px 0px rgba(120,150,120,0.2); */
+  /* z-index: 1; */
 }
 
 .dropdown-content a {
@@ -85,7 +118,7 @@
   padding-bottom: 50px;
 } */
 
-.container{
+/* .container{
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -183,7 +216,7 @@
   color: #555;
   line-height: 1.6;
   letter-spacing: 1px;
-}
+} */
  /* End navbar style */
 
 #programmepage{
@@ -327,6 +360,10 @@ body{
   padding: 100px;
 }
 
+.student-text h2, h3, p{
+  padding-bottom: 10px;
+}
+
 .button {
   background-color: #b30059;
   border: none;
@@ -404,7 +441,7 @@ div.scroll-container img {
 footer{
   font-family: "Poppins", sans-serif;
   background-color:#b30059;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
   color: white;
 }
@@ -415,6 +452,7 @@ footer h3{
 footer p{
   padding-top: 10px;
   font-weight: 500;
+  padding-bottom: 0;
 }
 /* footer{
   background-color: #bbb;
